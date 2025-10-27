@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Consulta - Salus Odonto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho simples -->
+    <header class="header-simples">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo Salus Odonto">
+        </div>
+        <a href="index.html" class="voltar-home">⬅ Voltar</a>
+    </header>
+
+    <!-- Seção principal -->
+    <section class="consulta">
+        <h1>Agende sua Consulta</h1>
+        <p>Preencha os dados abaixo para agendar sua consulta na <strong>Salus Odonto</strong>.</p>
+
+        <form action="confirmacao.html" method="get" class="consulta-form">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+            <label for="data">Data da Consulta:</label>
+            <input type="date" id="data" name="data" min="2025-01-01" max="2025-12-31" required>
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione um horário</option>
+                <option>08:00</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+            </select>
+
+            <label for="doutora">Doutora Responsável:</label>
+            <select id="doutora" name="doutora" required>
+                <option value="">Selecione a doutora</option>
+                <option>Dra. Especialista em Aparelhos</option>
+                <option>Dra. Especialista em Limpeza</option>
+            </select>
+
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" rows="4" placeholder="Informações adicionais (opcional)"></textarea>
+
+            <!-- Botão principal -->
+            <button type="submit" class="btn-agendar">Confirmar Agendamento</button>
+
+            <!-- Links de ações adicionais -->
+            <div class="acoes-consulta">
+                <p>Já possui uma consulta agendada?</p>
+                <div class="botoes-acoes">
+                    <a href="cancelar.html" class="btn-cancelar">Cancelar Consulta</a>
+                    <a href="alterar.html" class="btn-alterar">Alterar Consulta</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Salus Odonto - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
